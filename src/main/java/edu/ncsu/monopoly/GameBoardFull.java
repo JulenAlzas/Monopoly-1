@@ -1,7 +1,9 @@
 package edu.ncsu.monopoly;
 
 public class GameBoardFull extends GameBoard {
-    public GameBoardFull() {
+    private static final String YELLOW = "yellow";
+
+	public GameBoardFull() {
         super();
         PropertyCell dp1 = new PropertyCell();
         CardCell cc1 = new CardCell(Card.TYPE_CC, "Community Chest 1");
@@ -45,19 +47,20 @@ public class GameBoardFull extends GameBoard {
         
 
         dp1.setPrice(60);
-        dp1.setColorGroup("purple");
+        String colorGroup = "purple";
+		dp1.setColorGroup(colorGroup);
         dp1.setHousePrice(50);
         dp1.setName("Mediterranean Avenue");
         dp1.setRent(2);
         
         dp2.setPrice(60);
-        dp2.setColorGroup("purple");
+        dp2.setColorGroup(colorGroup);
         dp2.setHousePrice(50);
         dp2.setName("Baltic Avenue");
         dp2.setRent(4);
         
         dp3.setPrice(60);
-        dp3.setColorGroup("purple");
+        dp3.setColorGroup(colorGroup);
         dp3.setHousePrice(50);
         dp3.setName("Sarah Avenue");
         dp3.setRent(4);
@@ -99,19 +102,20 @@ public class GameBoardFull extends GameBoard {
         p3.setRent(12);
         
         o1.setPrice(180);
-        o1.setColorGroup("maroon");
+        String maroon = "maroon";
+		o1.setColorGroup(maroon);
         o1.setHousePrice(100);
         o1.setName("St. James Avenue");
         o1.setRent(14);
         
         o2.setPrice(180);
-        o2.setColorGroup("maroon");
+        o2.setColorGroup(maroon);
         o2.setHousePrice(100);
         o2.setName("Tennessee Avenue");
         o2.setRent(14);
         
         o3.setPrice(200);
-        o3.setColorGroup("maroon");
+        o3.setColorGroup(maroon);
         o3.setHousePrice(100);
         o3.setName("New York Avenue");
         o3.setRent(16);
@@ -135,19 +139,19 @@ public class GameBoardFull extends GameBoard {
         r3.setRent(20);
         
         y1.setPrice(260);
-        y1.setColorGroup("yellow");
+        y1.setColorGroup(YELLOW);
         y1.setHousePrice(150);
         y1.setName("Atlantic Avenue");
         y1.setRent(22);
         
         y2.setPrice(260);
-        y2.setColorGroup("yellow");
+        y2.setColorGroup(YELLOW);
         y2.setHousePrice(150);
         y2.setName("Ventnor Avenue");
         y2.setRent(22);
         
         y3.setPrice(280);
-        y3.setColorGroup("yellow");
+        y3.setColorGroup(YELLOW);
         y3.setHousePrice(150);
         y3.setName("Marvin Gardens");
         y3.setRent(24);
