@@ -10,11 +10,12 @@ public class GameBoardCCMovePlayer extends GameBoard {
         JailCell jail = new JailCell();
         CardCell chance1 = new CardCell(Card.TYPE_CHANCE, "Chance 1");
         
-        Card ccCard1 = new MovePlayerCard("Blue 1" , Card.TYPE_CC);
+        String blue1="Blue 1";
+        Card ccCard1 = new MovePlayerCard(blue1 , Card.TYPE_CC);
         Card ccCard2 = new MovePlayerCard("Blue 2", Card.TYPE_CC);
-        Card chanceCard1 = new MovePlayerCard("Blue 1", Card.TYPE_CHANCE);
+        Card chanceCard1 = new MovePlayerCard(blue1, Card.TYPE_CHANCE);
 		
-		blue1.setName("Blue 1");
+		blue1.setName(blue1);
 		blue2.setName("Blue 2");
 		
 		blue1.setColorGroup("blue");
