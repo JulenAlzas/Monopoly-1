@@ -3,9 +3,8 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>iso2</groupId>
-  <artifactId>MonopolySonarcloud2</artifactId>
+  <artifactId>MonopolySonarcloud</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <packaging>jar</packaging>
 
   <name>Monopoly2</name>
   <url>http://maven.apache.org</url>
@@ -37,7 +36,7 @@
       <maven.compiler.target>1.8</maven.compiler.target> 
       <sonar.organization>julenalzas</sonar.organization>
       <sonar.host.url>https://sonarcloud.io</sonar.host.url>  
-      <sonar.login>a16ea7a99bc58aca7828b81d19d4aa6e18fcc089</sonar.login> 
+      <sonar.login>1e71d9e4825398d0a30fe194c4b9f901a944f745</sonar.login> 
     </properties>
 
   <dependencies>
